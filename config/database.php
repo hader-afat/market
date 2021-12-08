@@ -46,7 +46,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'sql6.freemysqlhosting.net'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
@@ -67,7 +67,7 @@ return [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
 
-            'host' => env('DB_HOST_2', '127.0.0.1'),
+            'host' => env('DB_HOST_2', 'sql11.freemysqlhosting.net'),
             'port' => env('DB_PORT_2', '3306'),
             'database' => env('DB_DATABASE_2', 'forge'),
             'username' => env('DB_USERNAME_2', 'forge'),
