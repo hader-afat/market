@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Auth;
+use File;
 use App\Models\Product;
 
 class ProductController extends Controller
@@ -43,6 +44,7 @@ class ProductController extends Controller
         $rules =
         [
             'name' => 'required|string',
+            'image' => 'required|file',
             'type' => 'required|string',
             'description' => 'required|string',
             'price' => 'required',
@@ -55,8 +57,22 @@ class ProductController extends Controller
         else
         {
             $id = Auth::user()->id;
+            /****************image************************/
+            if( $request->hasFile('image') )
+            {
+                $validator_2 = $request->validate([
+                    'image' => 'mimes:jpeg,bmp,png,jpg' // Only allow .jpg, .bmp and .png file types.
+                ]);
+                //save image in folder
+                $file_extention = $request->image->getClientOriginalExtension();
+                $file_name = time(). '.' .$file_extention;
+                $file_path = 'images/products' ;  //get image path
+                $request->image->move($file_path,$file_name);
+            }
+
             $product = Product::create([
             'name' => $request->name ,
+            'image' => $file_name,
             'type' => $request->type ,
             'description' => $request->description,
             'creator_id' => $id,
@@ -170,6 +186,12 @@ class ProductController extends Controller
         {
             if ( $authuserid == $products->creator_id && $authuserid == $products->owner_id )
             {
+                //delete image
+                $path = 'images/products/'.$products->image;
+                if ( File::exists($path) )
+                {
+                    File::delete($path);
+                }
         
                 $products->delete();
                 return 'product deleted successfully';

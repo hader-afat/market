@@ -14,6 +14,7 @@ class AuthController extends Controller
     {
         $data = $request->validate([
             'name' => 'required|string',
+            'image' => 'required|file',
             'username' => 'required|string|unique:users,username',
             'region' => 'required|string',
             'email' => 'required|email|unique:users,email',
@@ -23,8 +24,21 @@ class AuthController extends Controller
         {
             $user = new User;
             $user->setConnection('mysql');
+            /****************image************************/
+            if( $request->hasFile('image') )
+            {
+                $validator_2 = $request->validate([
+                    'image' => 'mimes:jpeg,bmp,png,jpg' // Only allow .jpg, .bmp and .png file types.
+                ]);
+                //save image in folder
+                $file_extention = $request->image->getClientOriginalExtension();
+                $file_name = time(). '.' .$file_extention;
+                $file_path = 'images/users' ;  //get image path
+                $request->image->move($file_path,$file_name);
+            }
             $x = $user->create([
                 'name' => $data['name'],
+                'image' => $file_name,
                 'username' => $data['username'],
                 'region' => $data['region'],
                 'email' => $data['email'],
@@ -43,8 +57,21 @@ class AuthController extends Controller
         {
             $user = new User;
             $user->setConnection('mysql_2');
+            /****************image************************/
+            if( $request->hasFile('image') )
+            {
+                $validator_2 = $request->validate([
+                    'image' => 'mimes:jpeg,bmp,png,jpg' // Only allow .jpg, .bmp and .png file types.
+                ]);
+                //save image in folder
+                $file_extention = $request->image->getClientOriginalExtension();
+                $file_name = time(). '.' .$file_extention;
+                $file_path = 'images/users' ;  //get image path
+                $request->image->move($file_path,$file_name);
+            }
             $x = $user->create([
                 'name' => $data['name'],
+                'image' => $file_name,
                 'username' => $data['username'],
                 'region' => $data['region'],
                 'email' => $data['email'],

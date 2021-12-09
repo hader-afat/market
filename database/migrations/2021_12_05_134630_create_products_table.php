@@ -16,6 +16,7 @@ class CreateProductsTable extends Migration
         Schema::connection('mysql_2')->create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image');
             $table->string('type'); //category
             $table->boolean('available')->default(true); //not solid
             $table->text('description');
@@ -33,6 +34,7 @@ class CreateProductsTable extends Migration
         Schema::connection('mysql')->create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image');
             $table->string('type'); //category
             $table->boolean('available')->default(true); //not solid
             $table->text('description');
