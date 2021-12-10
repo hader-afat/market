@@ -53,7 +53,7 @@ Route::get('/search-form', function () {
 // Route::get('test', 'App\Http\Controllers\ProductController@tt');
 
 Route::get('/', function () {
-    return view('welcom');
+    return view('login');
 });
 Route::get('/about', function () {
     return view('about');
