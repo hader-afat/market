@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class MyController extends Controller
 {
+    public function test(Request $request)
+    {
+        return $request;
+    }
     /**
      * Display a listing of the resource.
      *

@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -14,14 +15,15 @@ class AuthController extends Controller
     {
         $data = $request->validate([
             'name' => 'required|string',
-            'image' => 'required|file',
             'username' => 'required|string|unique:users,username',
             'region' => 'required|string',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string',
+            'image' => 'required|file',
         ]);
         if($data['region'] == 'cairo')
         {
+            // dd($request['region']);
             $user = new User;
             $user->setConnection('mysql');
             /****************image************************/
@@ -51,10 +53,13 @@ class AuthController extends Controller
                 'user' => $x,
                 // 'token' => $token
             ];
-            return response($response, 201);
+            return view('login') ;
+            // return response($response, 201);
+            
         }
         else if($data['region'] == 'giza')
         {
+            // return 'gizaaa';
             $user = new User;
             $user->setConnection('mysql_2');
             /****************image************************/
@@ -84,7 +89,8 @@ class AuthController extends Controller
                 'user' => $x,
                 // 'token' => $token
             ];
-            return response()->json($response, 201);
+            // return response()->json($response, 201);
+            return view('login') ;
         }
     }
 
@@ -112,25 +118,36 @@ class AuthController extends Controller
                         'user' => $user,
                         'token' => $token
                     ];
-                    return response($response, 200);
+                    // return response($response, 200);
+                    // return view('welcom',compact($response)) ;
+                    return view('profile',[
+                        "user" => $user,
+                        "token" => $token,
+                    ]) ;
                 }
         }
         else
         {
             $token = $user->createToken('marketProjectToken')->plainTextToken;
-            $response =[
-                'user' => $user,
-                'token' => $token
-            ];
-            return response($response, 200);
+            // $response =[
+            //     'user' => $user,
+            //     'token' => $token
+            // ];
+            // $response = [ $user , $token ];["data"=>$data]
+            // return response($response, 200);
+            return view('profile',[
+                "user" => $user,
+                "token" => $token,
+            ]) ;
         }
     }
 
     public function logout()
     {
         auth()->user()->tokens()->delete();
-        return response([
-            'message' => 'Logged Out Successfully',
-        ]);
+        // return response([
+        //     'message' => 'Logged Out Successfully',
+        // ]);
+        return view('welcom') ;
     }
 }
