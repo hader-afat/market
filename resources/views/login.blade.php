@@ -58,20 +58,21 @@
                         <a href = "Mainpage.html"><img src = "images/outlet.png" width="125px"></a>
                     </div>
                     <h4 class = "font_weight_light">Sign into your account</h4>
-                    <form>
+                    <form action="{{ url('/login') }}" method="POST" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input  id="mail" type = "email" placeholder = "Email-Address" class = "from-control my-2 p-2 ">
+                                <input  id="mail" type = "email" placeholder = "Email-Address" class = "from-control my-2 p-2 " name="email">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input id="pass" type = "password" placeholder = "*****" class = "from-control my-2 p-2">
+                                <input id="pass" type = "password" placeholder = "*****" class = "from-control my-2 p-2" name="password">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <button id="login" type = "button" class = "btn1 mt-3 mb-5">Login</button>
+                                <button id="login" type = "submit" class = "btn1 mt-3 mb-5">Login</button>
                             </div>
                         </div>
                         <p>Don't have an account? <a href = "/register" >Register here</a></p>

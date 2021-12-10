@@ -51,7 +51,8 @@
     <div class = "container my-3">
         <h2 class = "page-title">Add a new post</h2>
         <div class = "container my-4">
-            <form action = "Add post page.html" method = "post">
+        <form action="{{ url('/products') }}" method="POST" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                 <div class = "row my-3 mx-1">
                     <label class=" form-label">Product Name</label>
                     <input type = "text" name = "ProductName" class = "text-input form-control">

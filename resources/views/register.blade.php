@@ -51,7 +51,7 @@
         <div class = "container">
             <div class = "row rowl no-gutters">
                 <div class = "col-lg-5">
-                    <img style = "height : 580px; width : 480;" src = "Images/model2.jpg" class ="img1 img-fluid" alt = "">
+                    <img style = "height : 580px; width : 480;" src = "Images/reg.jfif" class ="img1 img-fluid" alt = "">
                 </div>
                 <div class="col-lg-7 mt-5 px-5 pt-4">
                     <div class="logo">

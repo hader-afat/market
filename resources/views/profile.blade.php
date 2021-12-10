@@ -35,11 +35,8 @@
                 <nav>
                     <ul class = "ulx">
                     <li><a href="/">Home Page</a></li>
-                    <li><a href="/marketplace">Marketplace</a></li>
-                    <li><a href="/register">Register</a></li>
-                    <li><a href="/login">Login</a></li>
                     <li><a href="">Profile</a></li>
-                    <li><a href="Mainpage.html">Logout</a></li>
+                    <li><a href="/">Logout</a></li>
                     <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
@@ -53,7 +50,7 @@
             <div class="summaryz">
                 <div class="row">
                     <div class="col-7z">
-                        <img style = "width : 280px; height : 250px;" src="Images/user.png" >
+                        <img style = "width : 280px; height : 250px;" src="{{ asset('images/users/'.$user->image) }}" >
                     </div>
                     <div class="col">
                         <div class = "orderz">
@@ -74,7 +71,7 @@
                     <div class = "row">
                         <div class="col ml-4">   
                             <i class="attz">Name: </i>
-                            <i>Ahmed Muhammed</i>
+                            <i>{{$user->name}}</i>
                         </div>
                     </div>	
                 </div>
@@ -87,12 +84,12 @@
                     <div class = "row">
                         <div class = "col ml-6">
                             <i class="attz">Email: </i>
-                            <p>Example@domain.com</p>   
+                            <p>{{$user->email}}</p>   
                         </div>
                         <div class = "col ml-6">
                             <i class="attz">City : </i>
-                            <p>Cairo</p> 
-                            <a href="Password_Change.html" class="btnx my-2">Change Password</a><br>
+                            <p>{{$user->region}}</p> 
+                            <a href="/Password_Change" class="btnx my-2">Change Password</a><br>
                         </div>
                     </div>
                 </div>
