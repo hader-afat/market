@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <link rel =  "shortcut icon" href = "Images/outlet.png">
     <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="main.css">
     <title>Login</title>
   </head>
   <body>
