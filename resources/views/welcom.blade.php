@@ -41,12 +41,13 @@
                 <input class = "searchx" type="search" id="query" name="q"
                  placeholder="Search..."
                  aria-label="Search through site content">
-                <button class = "buttonx">Search</button>
+                <a href = "/search" ><button class = "buttonx">Search</button></a>
               </form>
         </div>
     <nav>
         <ul class = "ulx">
             <li><a href="/register">Register</a></li>
+            <li><a href="/marketplace">Marketplace</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/profile">Profile</a></li>
             <li><a id="logout" href="">Logout</a></li>

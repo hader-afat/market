@@ -64,25 +64,47 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+
+
+Route::get('/wallet', function () {
+    return view('wallet');
+});
+Route::get('/addpage', function () {
+    return view('addpage');
+});
+Route::get('/orderhistory', function () {
+    return view('orderhistory');
+});
+Route::get('/available', function () {
+    return view('available');
+});
+
+Route::get('/marketplace', function () {
+    return view('marketplace');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+Route::get('/sold', function () {
+    return view('sold');
+});
 Route::get('/profile', function () {
-    return view('login');
+    return view('profile');
+});
+
+
+Route::get('/Password_Change', function () {
+    return view('password_change');
+});
+Route::get('/Product Details', function () {
+    return view('Product Details');
 });
 
 
 Route::middleware(['auth:sanctum'])->group(function ()
 {
-    Route::get('/product', function () {
-        return view('welcome');
-    });
-    Route::get('/profile', function () {
-        return view('profile');
-    });
-    Route::get('/product', function () {
-        return view('welcom');
-    });
-    Route::get('/wallet', function () {
-        return view('wallet');
-    });
+    
     Route::get('logout',[App\Http\Controllers\API\AuthController::class,'logout']);
 
     Route::post('search','App\Http\Controllers\Controller@search');

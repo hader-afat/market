@@ -35,14 +35,12 @@
                     <ul class = "ulx">
                     <li><a href="/">Home Page</a></li>
                     <li><a href="/marketplace">Marketplace</a></li>
-                    <li><a href="/register">Register</a></li>
-                    <li><a href="/login">Login</a></li>
                     <li><a href="/profile">Profile</a></li>
-                    <li><a href="Mainpage.html">Logout</a></li>
+                    <li><a href="/">Logout</a></li>
                     <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
-                <a href = "cart.html"><img src="images/cart.png" width="30px" height="30px" ></a>
+                <a href = "/cart"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
@@ -50,17 +48,7 @@
     <div class = "container">
         <div class="summaryz">
             <div class="row">
-                <div class="col-7z">
-                    <img style = "width : 280px; height : 200px;" src="Images/user.png" >
-                </div>
-                <div class="col">
-                    <div class = "orderz">
-                        <a href="/orderhistory" class="btn-lg btn-block btnz my-2">My Orders</a><br>
-                        <a href="" class="btn-lg btn-block btnz my-2">Add a New Product</a><br> 
-                        <a href="" class="btn-lg btn-block btnz my-2">Update Information</a><br> 
-                        <a href="/wallet" class="btn-lg btn-block btnz my-2">My Wallet</a>
-                    </div>        
-                </div>
+               
             </div>
             <div>
             <h1 class="page-title " style="text-align: center;">Order History</h1> 

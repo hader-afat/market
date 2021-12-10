@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,10 +15,9 @@
     <link rel =  "shortcut icon" href = "Images/outlet.png">
     <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <title>Register</title>
-  </head>
-  <body>
-
+    <title>Product details Page</title>
+</head>
+<body>
     <div class="headerx">
         <div class = "containerx">
             <div class="navbarx">
@@ -36,81 +34,57 @@
                 </div>
                 <nav>
                     <ul class = "ulx">
-                            <li><a href="/"> Home Page</a></li>
-                            <li><a href="/marketplace">Marketplace</a></li>
-                            <li><a href="/login">Login</a></li>
-                            <li><a id="logout" href="">Logout</a></li>
-                            <li><a href="/about">About</a></li>
-                        </ul>
+                    
+                        <li><a href="/">Home Page</a></li>
+                        <li><a href="/marketplace">Marketplace</a></li>
+                        <li><a href="/Profile">Profile</a></li>
+                        <li><a href="/">Logout</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
                 </nav>
                 <a href = "/cart"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
 
-    <section class = "Form mt-5 pt-3 my-4 mx-5 mb-5">
-        <div class = "container">
-            <div class = "row rowl no-gutters">
-                <div class = "col-lg-5">
-                    <img style = "height : 580px; width : 480;" src = "Images/model2.jpg" class ="img1 img-fluid" alt = "">
-                </div>
-                <div class="col-lg-7 mt-5 px-5 pt-4">
-                    <div class="logo">
-                        <a href = "Mainpage.html"><img src = "images/outlet.png" width="125px"></a>
+    <div class = "container my-5" style = "height : max;">
+        <div class = "row">
+            <div class = "col-md-5">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" style = "height : 300px;" src="Images/bag.jfif" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" style = "height : 300px;" src="Images/bag.jfif" alt="Second slide">
+                        </div>
                     </div>
-                    <h4 class = "font_weight_light">Create a new account</h4>
-
-                    <form action="{{ url('/register') }}" method="POST" enctype="multipart/form-data">
-                        {{ csrf_field() }}
-
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input id="name"type = "text" placeholder = "Name" class = "from-control my-2 p-2 " name="name">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-4">
-                                <input id="usrname" type = "text" placeholder = "Username" class = "from-control my-2 p-2" name="username">
-                            </div>
-                            <div class="col-md-5">
-                                <select id = "Region" class = "from-control my-2 p-2" required name="region">
-                                    <option value="">Choose..</option>
-                                    <option value="cairo">cairo</option>
-                                    <option value="giza">giza</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input id="mail" type = "email"  name = "email" placeholder = "Email-Address" class = "from-control my-2 p-2 ">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input id="pass"  name="password" type = "password" placeholder = "Password" class = "from-control my-2 p-2">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input type = "password" placeholder = "Confirm Password" class = "from-control my-2 p-2">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <input class = "file-upload-input" type = "file" onchange="readURL(this)" accept = "Image/*" name="image">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-7">
-                                <button id="register" type = "submit" class = "btn1 mt-3 mb-5">Register</button>
-                                <p>Already have an account?<a href="/login"> Login</a></p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+            </div>
+            <div class = "col-md-7">
+                <p class = "newarrival text-center">NEW</p>
+                <h2>Bag</h2>
+                <p><b>pink bag</b></p>
+                <p class = "pricew">1800 EGP</p>
+                <p><b>Availability : </b>In Stock</p>
+                <p><b>Condition : </b>New</p>
+                <p><b>Brand : </b>Shein</p>
+                <label>Quantity : </label>
+                <input class = "inputw" type = "text" id = "quantity" value = "1">
+                <br><br>
+                <button id = "addtocart" type = "button" class = "btnz btn-lg btn-block">Add to cart</button>
             </div>
         </div>
-    </section>
+    </div>
+
     <div class="footerx">
         <div class="containerx">
             <div class="rowx">
@@ -146,13 +120,13 @@
             <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>  
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/register.js"></script>
+    
 </body>
 </html>

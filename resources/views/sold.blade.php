@@ -15,7 +15,7 @@
     <link rel =  "shortcut icon" href = "Images/outlet.png">
     <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <title>Search</title>
+    <title>Sold Items</title>
 </head>
 <body>
     <div class="headerx">
@@ -34,20 +34,22 @@
                 </div>
                 <nav>
                     <ul class = "ulx">
-                    
                         <li><a href="/">Home Page</a></li>
-                        <li><a href="Marketplace.html">Marketplace</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li><a href="/marketplace">Marketplace</a></li>
                         <li><a href="/profile">Profile</a></li>
-                        <li><a href="/">Logout</a></li>
+                        <li><a id="logout" href="">Logout</a></li>
                         <li><a href="/about">About</a></li>
-                    </ul>
+                        </ul>
                 </nav>
                 <a href = "/cart"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
-    
+
+    <div class = "container">
+        <h1 class="page-title " style="text-align: center;">My Sold Products</h1> 
+    </div>
+
     <div class = "container mb-5 my-3" style = "height : max">
         <div class="row align-items-center" style = "height : 500px">
             <div class="col" style = "height : 550px">
@@ -55,7 +57,7 @@
                     <div class = "slide-imga">
                         <img src = "Images/bag.jfif" alt = "1">
                         <div class = "overlaya">
-                            <a href = "/Product Details" class = "view-btna" >View</a>
+                            <a href = "#" class = "view-btna" >View</a>
                         </div>
                     </div>
                     <div class = "detail-boxa">
@@ -102,6 +104,79 @@
                 </div>
             </div>
         </div>
+        <div class="row align-items-center" style = "height : 500px">
+            <div class="col" style = "height : 550px">
+                <div class = "boxa">
+                    <div class = "slide-imga">
+                        <img src = "Images/greypullover.jpeg" alt = "1">
+                        <div class = "overlaya">
+                            <a href = "#" class = "view-btna" >View</a>
+                        </div>
+                    </div>
+                    <div class = "detail-boxa">
+                         <div class = "typea">
+                             <a href = "#" class = "aa">Grey Pullover </a>
+                             <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                         </div>   
+                         <a href = "#" class = "pricea aa">299 EGP</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col" style = "height : 550px">
+                <div class = "boxa">
+                    <div class = "slide-imga">
+                        <img src = "Images/blackpants.jpg" alt = "1">
+                        <div class = "overlaya">
+                            <a href = "#" class = "view-btna" >View</a>
+                        </div>
+                    </div>
+                    <div class = "detail-boxa">
+                         <div class = "typea">
+                             <a href = "#" class = "aa">Black Trousers</a>
+                             <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                         </div>   
+                         <a href = "#" class = "pricea aa">300 EGP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style = "height : 550px">
+                <div class = "boxa">
+                    <div class = "slide-imga">
+                        <img src = "Images/jacket.jpg" alt = "1">
+                        <div class = "overlaya">
+                            <a href = "#" class = "view-btna" >View</a>
+                        </div>
+                    </div>
+                    <div class = "detail-boxa">
+                         <div class = "typea">
+                             <a href = "#" class = "aa">Navy Jacket</a>
+                             <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                         </div>   
+                         <a href = "#" class = "pricea aa">550 EGP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center" style = "height : 500px">
+            <div class="col" style = "height : 550px">
+                <div class = "boxa">
+                    <div class = "slide-imga">
+                        <img src = "Images/mi.png" alt = "1">
+                        <div class = "overlaya">
+                            <a href = "#" class = "view-btna" >View</a>
+                        </div>
+                    </div>
+                    <div class = "detail-boxa">
+                            <div class = "typea">
+                                <a href = "#" class = "aa">Mi Band 5</a>
+                                <span class = "spana">Sold by <a href = "#">SellerName</a></span>
+                            </div>   
+                            <a href = "#" class = "pricea aa">575 EGP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footerx">
@@ -139,6 +214,7 @@
             <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
         </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -146,5 +222,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>  
     <script src="js/jquery-3.6.0.min.js"></script>
-    </body>
+    
+
+</body>
 </html>

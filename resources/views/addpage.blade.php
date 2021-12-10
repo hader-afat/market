@@ -37,10 +37,8 @@
                     <ul class = "ulx">
                     <li><a href="/">Home Page</a></li>
                         <li><a href="/marketplace">Marketplace</a></li>
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="Login.html">Login</a></li>
-                        <li><a href="Profile.html">Profile</a></li>
-                        <li><a href="Mainpage.html">Logout</a></li>
+                        <li><a href="/Profile">Profile</a></li>
+                        <li><a href="/">Logout</a></li>
                         <li><a href="/about">About</a></li>
                     </ul>
                 </nav>

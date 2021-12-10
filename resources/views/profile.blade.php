@@ -54,11 +54,11 @@
                     </div>
                     <div class="col">
                         <div class = "orderz">
-                            <a href="" id = "Newproduct" class="btn-lg btn-block btnz my-2">Add a New Product</a><br>
+                            <a href="/addpage" id = "Newproduct" class="btn-lg btn-block btnz my-2">Add a New Product</a><br>
                             <a href="/wallet" id = "/Wallet" class="btn-lg btn-block btnz my-2">My Wallet</a><br>
                             <a href="/orderhistory" id = "Orders" class="btn-lg btn-block btnz my-2">My Orders</a><br>
                             <a href="/available" id = "Available" class="btn-lg btn-block btnz my-2">My Available Products</a><br>
-                            <a href="Sold.html" id = "Sold" class="btn-lg btn-block btnz my-2">Sold Products</a>
+                            <a href="/sold" id = "Sold" class="btn-lg btn-block btnz my-2">Sold Products</a>
                         </div>        
                     </div>
                 </div>
