@@ -60,10 +60,10 @@
                     </div>
                     <div class = "detail-boxa">
                          <div class = "typea">
-                             <a href = "#" class = "aa">Bag</a>
+                             <a href = "/Product Details" class = "aa">Bag</a>
                              <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                          </div>   
-                         <a href = "#" class = "pricea aa">1800 EGP</a>
+                         <a href = "/Product Details" class = "pricea aa">1800 EGP</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                     </div>
                     <div class = "detail-boxa">
                          <div class = "typea">
-                             <a href = "#" class = "aa">Basic white shirt</a>
+                             <a href = "/Product Details" class = "aa">Basic white shirt</a>
                              <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                          </div>   
                          <a href = "#" class = "pricea aa">99 EGP</a>
@@ -94,7 +94,7 @@
                     </div>
                     <div class = "detail-boxa">
                          <div class = "typea">
-                             <a href = "#" class = "aa">Yellow Tshirt</a>
+                             <a href = "/Product Details" class = "aa">Yellow Tshirt</a>
                              <span class = "spana">Sold by <a href = "#">SellerName</a></span>
                          </div>   
                          <a href = "#" class = "pricea aa">110 EGP</a>

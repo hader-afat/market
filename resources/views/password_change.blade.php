@@ -92,41 +92,7 @@
         </div>
     </div>
 
-    <div class="footerx">
-        <div class="containerx">
-            <div class="rowx">
-                    <div class="footer-col-1x">
-                        <h3>Download Our App</h3>
-                       <div class="app-logo">
-                        <img src="images/appgoogle.jpg">
-                       </div>
-                    </div>
-                    <div class="footer-col-2x">
-                       <img src="images/outlet.png">
-                       <p>Our Purpose Is to Make Worldwide Products Accessible to the Many. </p>
-                    </div>
-                    <div class="footer-col-3x">
-                        <h3>Useful Links</h3>
-                        <ul class = "ulx">
-                            <li>Shipping information</li>
-                            <li>Refund Policy</li>
-                            <li>Join Affiliate</li>
-                            <li>Help</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col-4x">
-                        <h3>Follow Us</h3>
-                        <ul class = "ulx">
-                            <li>Facebook</li>
-                            <li>Instagram</li>
-                            <li>Twitter</li>
-                            <li>Youtube</li>
-                        </ul>
-                    </div>
-            </div>
-            <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
-        </div>
-    </div>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

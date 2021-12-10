@@ -95,7 +95,12 @@
             <h2 class="titlex">Featured Products</h2>
             <div class="rowx">
                 <div class="col-4x">
-                    <img class = "cat-imgx" src="images/mi.png" >
+                    <div class = "slide-imga">
+                        <img class = "boxa" src="images/mi.png" >
+                                <div class = "overlaya">
+                                    <a href = "/Product Details" class = "view-btna" >View</a>
+                                </div>
+                        </div>
                     <h4 class="catx">Mi band 5</h4>
                     <div class="catx">
                     <div class="ratingx">
@@ -109,7 +114,12 @@
                     <p class="catx">Price: 675 EGP</p>
                 </div>
                     <div class="col-4x" >
-                        <img class = "cat-imgx" src="images/jacket.jpg" >
+                        <div class = "slide-imga">
+                            <img class = "cat-imgx" src="images/jacket.jpg" >
+                                <div class = "overlaya">
+                                    <a href = "/Product Details" class = "view-btna" >View</a>
+                                </div>
+                        </div>
                         <h4 class="catx">Navy Green Jacket</h4>
                         <div class="catx">
                         <div class="ratingx">
@@ -123,7 +133,12 @@
                         <p class="catx">Price: 550 EGP</p>
                     </div>
                     <div class="col-4x">
-                        <img class = "cat-imgx" src="images/tv.jpg" >
+                        <div class = "slide-imga">
+                            <img class = "cat-imgx" src="images/tv.jpg" >
+                            <div class = "overlaya">
+                                <a href = "/Product Details" class = "view-btna" >View</a>
+                            </div>
+                        </div>
                         <h4 class="catx">Smart TV</h4>
                         <div class="catx">
                         <div class="ratingx">
@@ -137,7 +152,13 @@
                     </div>
                     </div>
                     <div class="col-4x">
-                        <img class = "cat-imgx" src="images/chair.jpg" >
+                        <div class = "slide-imga">
+                            <img class = "cat-imgx" src="images/chair.jpg" >
+                                <div class = "overlaya">
+                                    <a href = "/Product Details" class = "view-btna" >View</a>
+                                </div>
+                        </div>
+                        
                         <h4 class="catx">Black Rotating Chair</h4>
                         <div class="catx">
                         <div class="ratingx">
