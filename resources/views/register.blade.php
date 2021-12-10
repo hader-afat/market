@@ -36,8 +36,8 @@
                 </div>
                 <nav>
                     <ul class = "ulx">
-                            <li><a href=""> Home Page</a></li>
-                            <li><a href="/register"> Register</a></li>
+                            <li><a href="/"> Home Page</a></li>
+                            <li><a href="/login">Login</a></li>
                             <li><a id="logout" href="">Logout</a></li>
                             <li><a href="/about">About</a></li>
                         </ul>
@@ -59,18 +59,20 @@
                     </div>
                     <h4 class = "font_weight_light">Create a new account</h4>
 
-                    <form>
+                    <form action="{{ url('/register') }}" method="POST" enctype="multipart/form-data">
+                        {{ csrf_field() }}
+
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input id="name"type = "text" placeholder = "Name" class = "from-control my-2 p-2 ">
+                                <input id="name"type = "text" placeholder = "Name" class = "from-control my-2 p-2 " name="name">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-4">
-                                <input id="usrname" type = "username" placeholder = "Username" class = "from-control my-2 p-2">
+                                <input id="usrname" type = "text" placeholder = "Username" class = "from-control my-2 p-2" name="username">
                             </div>
                             <div class="col-md-5">
-                                <select id = "Region" class = "from-control my-2 p-2" required >
+                                <select id = "Region" class = "from-control my-2 p-2" required name="region">
                                     <option value="">Choose..</option>
                                     <option value="cairo">cairo</option>
                                     <option value="giza">giza</option>
@@ -79,12 +81,12 @@
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input id="mail" type = "email" placeholder = "Email-Address" class = "from-control my-2 p-2 ">
+                                <input id="mail" type = "email"  name = "email" placeholder = "Email-Address" class = "from-control my-2 p-2 ">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input id="pass" type = "password" placeholder = "Password" class = "from-control my-2 p-2">
+                                <input id="pass"  name="password" type = "password" placeholder = "Password" class = "from-control my-2 p-2">
                             </div>
                         </div>
                         <div class="form-row">
@@ -94,12 +96,12 @@
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <input class = "file-upload-input" type = "file" onchange="readURL(this)" accept = "Image/*">
+                                <input class = "file-upload-input" type = "file" onchange="readURL(this)" accept = "Image/*" name="image">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <button id="register" type = "button" class = "btn1 mt-3 mb-5">Register</button>
+                                <button id="register" type = "submit" class = "btn1 mt-3 mb-5">Register</button>
                                 <p>Already have an account?<a href="/login"> Login</a></p>
                             </div>
                         </div>
