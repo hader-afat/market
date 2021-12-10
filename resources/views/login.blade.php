@@ -23,7 +23,7 @@
         <div class = "container">
             <div class = "row rowl no-gutters">
                 <div class = "col-lg-5">
-                    <img src = "Images/model.jpeg" class ="img1 img-fluid" alt = "">
+                    <img src = "Images/outlet.png" class ="img1 img-fluid" alt = "">
                 </div>
                 <div class="col-lg-7 mt-5 px-5 pt-4">
                     <div class="logo">
