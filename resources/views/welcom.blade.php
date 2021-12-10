@@ -46,8 +46,6 @@
         </div>
     <nav>
         <ul class = "ulx">
-            <li><a href="">Home Page</a></li>
-            <li><a href="/marketplace">Marketplace</a></li>
             <li><a href="/register">Register</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/profile">Profile</a></li>

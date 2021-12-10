@@ -15,9 +15,11 @@
     <link rel =  "shortcut icon" href = "Images/outlet.png">
     <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <title>My Account</title>
+    <title>Password Change</title>
 </head>
+
 <body>
+
     <div class="headerx">
         <div class = "containerx">
             <div class="navbarx">
@@ -43,62 +45,55 @@
                     <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
-                <a href = "cart.html"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
 
-    <div class="container">
-           <!--h2 class="title">Featured Products</h2-->
-            <div class="summaryz">
-                <div class="row">
-                    <div class="col-7z">
-                        <img style = "width : 280px; height : 250px;" src="Images/user.png" >
+    <div class="container bootstrap snippets bootdey ml-6 pl-6 " style = "align-items: center; position: absolute; top: 50%; left: 55%; margin-right: -50%; transform: translate(-50%, -50%);">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-2">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-th"></span>
+                            Change password   
+                        </h3>
                     </div>
-                    <div class="col">
-                        <div class = "orderz">
-                            <a href="" id = "Newproduct" class="btn-lg btn-block btnz my-2">Add a New Product</a><br>
-                            <a href="/wallet" id = "/Wallet" class="btn-lg btn-block btnz my-2">My Wallet</a><br>
-                            <a href="/orderhistory" id = "Orders" class="btn-lg btn-block btnz my-2">My Orders</a><br>
-                            <a href="/available" id = "Available" class="btn-lg btn-block btnz my-2">My Available Products</a><br>
-                            <a href="Sold.html" id = "Sold" class="btn-lg btn-block btnz my-2">Sold Products</a>
-                        </div>        
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 separator social-login-box"> <br>
+                               <img alt="" class="img-thumbnail" style = "min-height : 200px; min-width : 200px;" src="Images/user.png">                        
+                            </div>
+                            <div style="margin-top:80px;" class="col-xs-6 col-sm-6 col-md-6 login-box">
+                             <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                                  <input class="form-control" type="password" placeholder="Current Password">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <div class="input-group-addon"><span class="glyphicon glyphicon-log-in"></span></div>
+                                  <input class="form-control" type="password" placeholder="New Password">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <div class = "container">
-                    <h3>Personal Information</h3>
-                    <br>
-                </div>
-                <div class = "container">
-                    <div class = "row">
-                        <div class="col ml-4">   
-                            <i class="attz">Name: </i>
-                            <i>Ahmed Muhammed</i>
-                        </div>
-                    </div>	
-                </div>
-                <br>
-                <div class = "container">
-                    <h3>Security</h3>
-                    <br>
-                </div>
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col ml-6">
-                            <i class="attz">Email: </i>
-                            <p>Example@domain.com</p>   
-                        </div>
-                        <div class = "col ml-6">
-                            <i class="attz">City : </i>
-                            <p>Cairo</p> 
-                            <a href="Password_Change.html" class="btnx my-2">Change Password</a><br>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6"></div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <button class="btn1" style = "align-items: center; " type="submit">
+                                <span class="btn-save-label"><i class="glyphicon glyphicon-floppy-disk"></i></span>save</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="footerx">
         <div class="containerx">
             <div class="rowx">
@@ -134,11 +129,12 @@
             <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Passwordchange.js"></script>
+  </body>
 </html>

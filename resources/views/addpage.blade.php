@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
     <link rel =  "shortcut icon" href = "Images/outlet.png">
     <script src="https://kit.fontawesome.com/8d4c067090.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
     <link rel="stylesheet" href="main.css">
-    <title>My Account</title>
+    <title>Add post Page</title>
 </head>
 <body>
     <div class="headerx">
@@ -35,70 +36,54 @@
                 <nav>
                     <ul class = "ulx">
                     <li><a href="/">Home Page</a></li>
-                    <li><a href="/marketplace">Marketplace</a></li>
-                    <li><a href="/register">Register</a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="Mainpage.html">Logout</a></li>
-                    <li><a href="/about">About</a></li>
+                        <li><a href="/marketplace">Marketplace</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Profile.html">Profile</a></li>
+                        <li><a href="Mainpage.html">Logout</a></li>
+                        <li><a href="/about">About</a></li>
                     </ul>
                 </nav>
-                <a href = "cart.html"><img src="images/cart.png" width="30px" height="30px" ></a>
             </div>
         </div>
     </div>
 
-    <div class="container">
-           <!--h2 class="title">Featured Products</h2-->
-            <div class="summaryz">
-                <div class="row">
-                    <div class="col-7z">
-                        <img style = "width : 280px; height : 250px;" src="Images/user.png" >
-                    </div>
-                    <div class="col">
-                        <div class = "orderz">
-                            <a href="" id = "Newproduct" class="btn-lg btn-block btnz my-2">Add a New Product</a><br>
-                            <a href="/wallet" id = "/Wallet" class="btn-lg btn-block btnz my-2">My Wallet</a><br>
-                            <a href="/orderhistory" id = "Orders" class="btn-lg btn-block btnz my-2">My Orders</a><br>
-                            <a href="/available" id = "Available" class="btn-lg btn-block btnz my-2">My Available Products</a><br>
-                            <a href="Sold.html" id = "Sold" class="btn-lg btn-block btnz my-2">Sold Products</a>
-                        </div>        
-                    </div>
-                </div>
-                <br>
-                <div class = "container">
-                    <h3>Personal Information</h3>
+    <div class = "container my-3">
+        <h2 class = "page-title">Add a new post</h2>
+        <div class = "container my-4">
+            <form action = "Add post page.html" method = "post">
+                <div class = "row my-3 mx-1">
+                    <label class=" form-label">Product Name</label>
+                    <input type = "text" name = "ProductName" class = "text-input form-control">
                     <br>
                 </div>
-                <div class = "container">
-                    <div class = "row">
-                        <div class="col ml-4">   
-                            <i class="attz">Name: </i>
-                            <i>Ahmed Muhammed</i>
-                        </div>
-                    </div>	
-                </div>
-                <br>
-                <div class = "container">
-                    <h3>Security</h3>
+                <div>
+                    <label class=" form-label">Product Description</label>
+                    <teaxtarea name = "Description" id = "Description"></teaxtarea>
                     <br>
                 </div>
-                <div class = "container">
-                    <div class = "row">
-                        <div class = "col ml-6">
-                            <i class="attz">Email: </i>
-                            <p>Example@domain.com</p>   
-                        </div>
-                        <div class = "col ml-6">
-                            <i class="attz">City : </i>
-                            <p>Cairo</p> 
-                            <a href="Password_Change.html" class="btnx my-2">Change Password</a><br>
-                        </div>
+                <div class = "row my-3">
+                    <div class = "col">
+                        <label class=" form-label">Price</label>
+                        <input type = "text" name = "ProductName" class = "text-input form-control">
                     </div>
+                    <div class = "col">
+                        <label class=" form-label">Brand</label>
+                        <input type = "text" name = "ProductName" class = "text-input form-control">
+                    </div>
+                    <br>
                 </div>
-            </div>
+                <div class = "row my-3">
+                    <div class = "col">
+                        <label class=" form-label">Product Image</label>
+                        <input class = "file-upload-input" type = "file" onchange="readURL(this)" accept = "Image/*">
+                    </div>
+                    <br>
+                </div>
+            </form>
         </div>
     </div>
+
     <div class="footerx">
         <div class="containerx">
             <div class="rowx">
@@ -134,11 +119,12 @@
             <hr><p class="copyrightx">Copyright 2021- Ecommerce Website ASU</p>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Addpost.js"></script>
 </body>
 </html>
